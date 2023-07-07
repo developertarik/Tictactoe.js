@@ -1,1 +1,4 @@
- 
+const gameBoard = {
+    gameBoard :[],
+    player:[],
+} 
