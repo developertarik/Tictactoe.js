@@ -1,17 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
  .board{
     display:grid;
     grid-template-rows: repeat(3,150px);
     grid-template-columns: repeat(3,150px);
-    background-color: rgb(164, 170, 152);
     justify-items: center;
     align-items: center;
-    justify-content: center;
+    justify-content: center;  
 
  
    }
      .box{
         flex: 0 0 32%;
     width: 100px;
+    border-radius: 25px;
     height: 100px;
     background-color: black;
     color:white;
@@ -21,4 +23,33 @@
  .choice{
     display:flex;
     justify-content: center;
+    gap:50px;
+    margin-bottom: 50px;
  }
+ .header-ch{
+    display: flex;
+    justify-content: center;
+ }
+ .btn{
+   width: 75px;
+   height: 50px;
+ }
+#X{
+      background-color: white;
+      color: black;
+      border: 2px solid green;
+}
+#O{  
+   background-color: white;
+   color:black;   
+   border: 2px solid blue
+}
+body{
+   background: #a3d1d1;
+   color:white;
+   font-family: 'Caprasimo', cursive;
+
+}
+.container{
+   text-align: center;
+}
