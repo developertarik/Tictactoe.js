@@ -18,3 +18,7 @@
     text-align: center;
     font-size: xxx-large;
  }
+ .choice{
+    display:flex;
+    justify-content: center;
+ }
