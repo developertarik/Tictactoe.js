@@ -12,10 +12,14 @@ const gboard = [];
                     gboard.push(box[i]);
                     console.log(gboard)
                     box[i].innerText = "X";
-                   if(gboard.length >3){
+                   if(gboard.length >2){
                     if((gboard[0].innerText == gboard[1].innerText)&& (gboard[1].innerText == gboard[2].innerText)){
                         console.log("Winner X")
                     }
+                    else if ( (gboard[1].innerText == gboard[5].innerText) && (gboard[9].innerText== gboard[5].innerText)){
+                        console.log(`winner x :  because ${gboard[1].innerText} and ${gboard[5].innerText} and ${gboard[9].innerText} is all X`)
+                    }
+                    
                    }
                 }) ; 
             
@@ -51,10 +55,7 @@ const gboard = [];
         seven = "box7",
         eight = "box8",
         nine = "box9";
-            //   ...
-    // } else if(id === second) {
-    //   ...
-    // } else if(id === third) {
-    //   ...
-    // }
+         if(first.innerText == "X" && second.innerText =="X" ){
+            // ?
+         }
 }
