@@ -3,7 +3,18 @@ const gameBoard = (()=>{
     const box = document.getElementsByClassName("box");
 const x = document.getElementById("X")
 const o = document.getElementById("O")
+const squareOne =document.getElementById("box-1")
+const squareTwo = document.getElementById("box-2")
+const squareThree = document.getElementById("box-3")
+const squareFour = document.getElementById("box-4")
+const squareFive = document.getElementById("box-5")
+const squareSix = document.getElementById("box-6")
+const squareSeven = document.getElementById("box-7")
+const squareEight = document.getElementById("box-8")
+const squareNine = document.getElementById("box-9")
+
 const gboard = [];
+//events
     x.addEventListener("click",()=>{
 
         for (let i = 0 ; i < box.length; i++) {
@@ -12,14 +23,22 @@ const gboard = [];
                     gboard.push(box[i]);
                     console.log(gboard)
                     box[i].innerText = "X";
-                   if(gboard.length >2){
-                    if((gboard[0].innerText == gboard[1].innerText)&& (gboard[1].innerText == gboard[2].innerText)){
-                        console.log("Winner X")
+                   if(gboard.length >3){
+                    if((squareOne.innerText == squareTwo.innerText)&& (squareThree.innerText == squareTwo.innerText)){
+                        console.log("Winner: Player 1 1,2,3")
+                        alert("Winner: Player 1 1,2,3")
+                        location.reload();
+
                     }
-                    else if ( (gboard[1].innerText == gboard[5].innerText) && (gboard[9].innerText== gboard[5].innerText)){
-                        console.log(`winner x :  because ${gboard[1].innerText} and ${gboard[5].innerText} and ${gboard[9].innerText} is all X`)
+                    else if ( (squareOne.innerText == squareFour.innerText) && (squareFour.innerText== squareSeven.innerText)){
+                        console.log("Winner: Player 1 ,1,4,7")
+                        alert("Winner: Player 1,1,4,7")
+                        location.reload(); }
+                    else if((squareOne.innerText==squareFive.innerText)&&(squareFive.innerText == squareNine.innerText)){
+                        console.log("Winner: Player 1 , 1,5,9")
+                        alert("Winner: Player 1 , 1,5,9")
+                        location.reload();
                     }
-                    
                    }
                 }) ; 
             
@@ -34,6 +53,23 @@ const gboard = [];
             if(box[i].innerText ==""){
             box[i].addEventListener("click",()=>{
                 box[i].innerText = "O";
+                if(gboard.length >3){
+                    if((squareOne.innerText == squareTwo.innerText)&& (squareThree.innerText == squareTwo.innerText)){
+                        console.log("Winner: Player 2 1,2,3")
+                        alert("Winner: Player 2 1,2,3")
+                        location.reload();
+
+                    }
+                    else if ( (squareOne.innerText == squareFour.innerText) && (squareFour.innerText== squareSeven.innerText)){
+                        console.log("Winner: Player 2 ,1,4,7")
+                        alert("Winner: Player 2,1,4,7")
+                        location.reload(); }
+                    else if((squareOne.innerText == "O" && squareFive.innerText =="O")&&(squareFive.innerText == "O"&& squareNine.innerText =="O")){
+                        console.log("Winner: Player 2 , 1,5,9")
+                        alert("Winner: Player 2 , 1,5,9")
+                        location.reload();
+                    }
+                   }
             })
         };
         }  
@@ -44,18 +80,4 @@ const gboard = [];
 
 
 
- function clicked(event) {
-    const id = event.target.id,
-        first = 'box1',
-        second = 'box2',
-        third = 'box3',
-        four = "box4",
-        five = "box5",
-        six = "box6",
-        seven = "box7",
-        eight = "box8",
-        nine = "box9";
-         if(first.innerText == "X" && second.innerText =="X" ){
-            // ?
-         }
-}
+ 
