@@ -143,9 +143,12 @@ const squareNine = document.getElementById("box-9")
                     location.reload();
                 }
                
-            
+                else if ((squareOne.innerText !="" && squareTwo.innerText !="") && (squareThree.innerText !="" && squareFour.innerText!="")&&(squareFive.innerText !="" && squareSix.innerText !="")&&(squareSeven.innerText !="" && squareNine.innerText !="" && squareEight.innerText !="")){
+                    alert("Draw");
+                    location.reload();
                }
-
+               }
+          
             }) ; 
         
         }
