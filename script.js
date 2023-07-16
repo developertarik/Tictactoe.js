@@ -137,9 +137,9 @@ const squareNine = document.getElementById("box-9")
                     alert("Winner: Player 2 , 1,5,9")
                     location.reload();
                 }
-                  else if((squareThree.innerText=="O" && squareFive.innerText =="O")&&(squareFive.innerText == "X" &&squareSeven.innerText =="X")){
-                    console.log("Winner: Player 1 , 3,5,7")
-                    alert("Winner: Player 1 , 3,5,7")
+                  else if((squareThree.innerText=="O" && squareFive.innerText =="O")&&(squareFive.innerText == "O" &&squareSeven.innerText =="O")){
+                    console.log("Winner: Player 2 , 3,5,7")
+                    alert("Winner: Player 2 , 3,5,7")
                     location.reload();
                 }
                
