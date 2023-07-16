@@ -88,6 +88,62 @@ const squareNine = document.getElementById("box-9")
                     alert("Winner: Player 1 , 3,5,9")
                     location.reload();
                 }
+                else if((squareTwo.innerText=="X" && squareFive.innerText =="X")&&(squareFive.innerText == "X" &&squareEight.innerText =="X")){
+                    console.log("Winner: Player 1 , 2,5,8")
+                    alert("Winner: Player 1 , 2,5,8")
+                    location.reload();
+                }
+                else if((squareThree.innerText=="X" && squareSix.innerText =="X")&&(squareSix.innerText == "X" &&squareNine.innerText =="X")){
+                    console.log("Winner: Player 1 , 3,6,9")
+                    alert("Winner: Player 1 , 3,6,9")
+                    location.reload();
+                }
+                //O
+                //0 
+                //1 2 3 -4 5 6 - 789 
+                else if((squareOne.innerText=="O" && squareTwo.innerText =="O")&&(squareTwo.innerText == "O" &&squareThree.innerText =="O")){
+                    console.log("Winner: Player2 , 1,2,3")
+                    alert("Winner: Player 2 , 1,2,3")
+                    location.reload();
+                }
+                else if((squareFour.innerText=="O" && squareFive.innerText =="O")&&(squareFive.innerText == "O" &&squareSix.innerText =="O")){
+                    console.log("Winner: Player 2, 4,5,6")
+                    alert("Winner: Player 1 , 4,5,6")
+                    location.reload();
+                }
+                else if((squareSeven.innerText=="O" && squareEight.innerText =="O")&&(squareEight.innerText == "O" &&squareNine.innerText =="O")){
+                    console.log("Winner: Player 2 , 7,8,9")
+                    alert("Winner: Player 2 , 7,8,9")
+                    location.reload();
+                }
+                // 1-47 -2-58-3-6-9
+                else if((squareOne.innerText=="O" && squareFour.innerText =="O")&&(squareFour.innerText == "O" &&squareSeven.innerText =="O")){
+                    console.log("Winner: Player 2 , 1,4,7")
+                    alert("Winner: Player 2 , 1,4,7")
+                    location.reload();
+                }
+                else if((squareTwo.innerText=="O" && squareFive.innerText =="O")&&(squareFive.innerText == "O" &&squareEight.innerText =="O")){
+                    console.log("Winner: Player 2 , 2,5,8")
+                    alert("Winner: Player 2 , 2,5,8")
+                    location.reload();
+                }
+                else if((squareThree.innerText=="O" && squareSix.innerText =="O")&&(squareSix.innerText == "O" &&squareNine.innerText =="O")){
+                    console.log("Winner: Player2 , 3,6,9")
+                    alert("Winner: Player 2 , 3,6,9")
+                    location.reload();
+                }
+                else if((squareOne.innerText=="O" && squareFive.innerText =="O")&&(squareFive.innerText == "O" &&squareNine.innerText =="O")){
+                    console.log("Winner: Player2 , 1,5,9")
+                    alert("Winner: Player 2 , 1,5,9")
+                    location.reload();
+                }
+                  else if((squareThree.innerText=="O" && squareFive.innerText =="O")&&(squareFive.innerText == "X" &&squareSeven.innerText =="X")){
+                    console.log("Winner: Player 1 , 3,5,7")
+                    alert("Winner: Player 1 , 3,5,7")
+                    location.reload();
+                }
+               
+            
                }
 
             }) ; 
